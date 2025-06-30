@@ -55,7 +55,7 @@ def _get_identifier_value_from_arxiv_identifier(arxiv_identifier):
 
 def fetch_arxiv_eprints(from_date, to_date):
     logger.info("Fetching new records from arXiv")
-    sickle = Sickle("http://export.arxiv.org/oai2")
+    sickle = Sickle("https://oaipmh.arxiv.org/oai")
     oaiargs = {"metadataPrefix": "oai_dc", "from": from_date, "until": to_date}
 
     eprints = set()
