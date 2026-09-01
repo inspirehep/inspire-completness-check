@@ -18,7 +18,6 @@ CORE_CATEGORIES = [
     "physics:hep-ex",
     "physics:hep-ph",
     "physics:hep-th",
-    "physics:quant-ph",
 ]
 
 TODAY = date.today()
