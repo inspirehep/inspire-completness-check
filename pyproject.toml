@@ -13,7 +13,7 @@ Sickle = "0.7.0"
 opensearch-py = "2.7.1"
 
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
 pytest = "^6.0"
 errbot-backend-test = "^6.1"
 
