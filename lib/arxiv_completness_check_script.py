@@ -104,7 +104,7 @@ def backoffice_check(eprints, from_date=None, to_date=None):
             query &= Q(
                 "range",
                 data__acquisition_source__datetime={
-                    "gt": from_date,
+                    "gte": from_date,
                     "lte": to_date,
                 },
             )
