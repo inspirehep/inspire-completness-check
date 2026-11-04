@@ -123,7 +123,7 @@ def backoffice_check(eprints, from_date=None, to_date=None):
 
 
 def _fetch_inspire_record_by_api(eprint):
-    request_payload = {"q": eprint}
+    request_payload = {"q": f"arxiv:{eprint}"}
     request = requests.get(HEP_API_URL, params=request_payload)
     if request.json()["hits"]["hits"]:
         inspire_control_number_for_eprint = request.json()["hits"]["hits"][0][
